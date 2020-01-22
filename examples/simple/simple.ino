@@ -1,7 +1,7 @@
 using namespace std;
 
 #include <Arduino.h>
-#include "buzzer.h"
+#include <BUZZER.h>
 
 const byte pinBuzzer = 8;
 
