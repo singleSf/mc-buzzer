@@ -77,6 +77,7 @@ void BUZZER::done(uint32_t _delayAfter) {
   tone(__pin, 1500);
   delay(100);
   tone(__pin, 2500);
+  delay(100);
 
   __end(_delayAfter);
 }
@@ -109,6 +110,7 @@ void BUZZER::pong(uint32_t _delayAfter) {
 void BUZZER::in(uint32_t _delayAfter) {
   for(word i = 700; i < 2000; i++){
     tone(__pin, i);
+    delayMicroseconds(10);
   }
 
   __end(_delayAfter);
@@ -117,6 +119,7 @@ void BUZZER::in(uint32_t _delayAfter) {
 void BUZZER::out(uint32_t _delayAfter) {
   for(word i = 2000; i > 700; i--){
     tone(__pin, i);
+    delayMicroseconds(10);
   }
 
   __end(_delayAfter);
