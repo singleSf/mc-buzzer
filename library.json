@@ -3,7 +3,7 @@
     "description": "Buzzer/Melody sound", 
     "keywords": "Buzzer, Melody, sound", 
     "repository": {
-        "url": "https://github.com/sf/mc/buzzer", 
+        "url": "https://github.com/singleSf/mc-buzzer", 
         "type": "git"
     }, 
     "platforms": [
