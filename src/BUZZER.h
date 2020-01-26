@@ -8,12 +8,18 @@ using namespace std;
 class BUZZER {
   private:
     byte __pin;
-    void __end(uint32_t = 0);
+    bool __isEnable;
+    void __end(uint32_t);
+    void __toneStart(uint32_t);
+    void __toneEnd();
+    void __delay(uint32_t, uint32_t = 0);
 
   public:
     BUZZER(byte);
     ~BUZZER();
 
+    void setEnable(bool);
+    
     void question(uint32_t = 0);
     void no(uint32_t = 0);
     void ok(uint32_t = 0);

@@ -9,6 +9,8 @@ BUZZER *Buzzer = new BUZZER(pinBuzzer);
 
 void setup() {
   Serial.begin(9600);
+
+  Buzzer->setEnable(true);
   
   Serial.println("question");
   Buzzer->question(1000);
