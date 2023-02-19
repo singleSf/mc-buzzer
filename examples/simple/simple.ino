@@ -1,9 +1,9 @@
 using namespace std;
 
 #include <Arduino.h>
-#include <BUZZER.h>
+#include "BUZZER.h"
 
-const byte pinBuzzer = 8;
+const byte pinBuzzer = 4;
 
 BUZZER *Buzzer = new BUZZER(pinBuzzer);
 
